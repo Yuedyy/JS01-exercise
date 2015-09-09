@@ -11,7 +11,7 @@
 
 body{background:#E3E3E3;}
 
-section{background-color: #FFFFFF; width:80%; height:1600px;margin: auto;}
+section{background-color: #FFFFFF; width:75%; height:1600px;margin: auto;}
 
 /*导航样式*/
 	nav{
@@ -19,7 +19,7 @@ section{background-color: #FFFFFF; width:80%; height:1600px;margin: auto;}
 	}
 	ul.nav-1{
 		width: 100%;
-		height: 60px;
+		height: 80px;
 		position: fixed;
 		background-color: #262626;
 		left: 0;
@@ -28,20 +28,17 @@ section{background-color: #FFFFFF; width:80%; height:1600px;margin: auto;}
 	}
 	.nav-1 .logo{
 		margin-right:10%;
-		height:60px;
+		height:80px;
 		width:20%;
 		background-color: #1C1C1C;
-		font: 35px/60px "porkys_";
+		font: 43px/70px "微软雅黑";
 		color:white;
 
 	}
 	.logo img{
-		height: 60px;
+		height: 100%;
 		width: 35%;
 		vertical-align: middle;
-	}
-	.logo span{
-
 	}
 	.nav-1 li{
 		display: inline;
@@ -50,10 +47,10 @@ section{background-color: #FFFFFF; width:80%; height:1600px;margin: auto;}
 	.nav-2 li{
 		margin-right: 45px;
 		width: 70px;
-		height: 60px;
+		height: 80px;
 		display: inline;
 		float: left;
-		font: 20px/60px "porkys_";
+		font: 25px/80px "porkys_";
 	}
 	.nav-1 a{
 		text-decoration: none;
@@ -62,17 +59,19 @@ section{background-color: #FFFFFF; width:80%; height:1600px;margin: auto;}
 	.nav-1 a:hover{color:#FDFDFD;}
 	li.log-in{
 	float: right;
-	height: 60px;
+	height: 80px;
 	margin-right: 20px;
 	margin-left: 10px;
-	font: 35px/60px "porkys_";
+	font: 40px/80px "porkys_";
 	}
 	.lock{
-		float: right;
+		
 		margin-right: 10px;
-		width:55px;
-		height:50px;
+		width:60px;
+		height:60px;
 		margin-top:5px;
+		vertical-align: middle;
+
 	}
 	.nav-text{
 		width: 800px;
@@ -88,9 +87,9 @@ section{background-color: #FFFFFF; width:80%; height:1600px;margin: auto;}
 
 /*大图轮播样式*/
 	ul.big_pic{
-		top: 60px;
-		height: 560px; 
-		width: 98%; 
+		top: 80px;
+		height: 580px; 
+		width: 97%; 
 		border:10px solid transparent; 
 		overflow:hidden; 
 		position: relative;
