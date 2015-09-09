@@ -33,13 +33,15 @@ section{background-color: #FFFFFF; width:75%; height:1600px;margin: auto;}
 		background-color: #1C1C1C;
 		font: 43px/70px "微软雅黑";
 		color:white;
-
+		font-weight: 900;
 	}
 	.logo img{
 		height: 100%;
 		width: 35%;
 		vertical-align: middle;
+
 	}
+
 	.nav-1 li{
 		display: inline;
 		float: left;
@@ -51,6 +53,7 @@ section{background-color: #FFFFFF; width:75%; height:1600px;margin: auto;}
 		display: inline;
 		float: left;
 		font: 25px/80px "porkys_";
+
 	}
 	.nav-1 a{
 		text-decoration: none;
@@ -64,6 +67,7 @@ section{background-color: #FFFFFF; width:75%; height:1600px;margin: auto;}
 	margin-left: 10px;
 	font: 40px/80px "porkys_";
 	}
+	li.log-in:hover{cursor: pointer;}
 	.lock{
 		
 		margin-right: 10px;
