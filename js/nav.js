@@ -1,13 +1,22 @@
-//选择非行间css样式
-function getStyle(obj,name){
-	if(obj.currentStyle)
-	{
-		return obj.currentStyle[name];
-	}
-	else{
-		return getComputedStyle(obj,false)[name];
-	}
-}
+
+//获取非行间css样式
+function getStyle(obj,attr){    //获取非行间样式，obj是对象，attr是值
+    if(obj.currentStyle){   //针对ie获取非行间样式
+        return obj.currentStyle[attr];
+    }else{
+        return getComputedStyle(obj,false)[attr];   //针对非ie
+    };
+};
+//为对象写入/获取css样式
+function css(obj,attr,value){   //对象，样式，值。传2个参数的时候为获取样式，3个是设置样式
+    if(arguments.length == 2){  //arguments参数数组，当参数数组长度为2时表示获取css样式
+        return getStyle(obj,attr);  //返回对象的非行间样式用上面的getStyle函数
+    }else{
+        if(arguments.length == 3){  //当传三个参数的时候为设置对象的某个值
+            obj.style[attr] = value;
+        };
+    };
+};
 
 
 window.onload=function()
@@ -29,12 +38,12 @@ window.onload=function()
 			for(var i=0; i<aBtn_nav2.length; i++)
 			{
 				aBtn_nav2[i].className=' ';
-				getStyle(aTxt_nav1[i],z-index)=1;
+				css(aTxt_nav1[i],'display','none');
 				
 			}
 			this.className="active";
-			getStyle(aTxt_nav1[this.index],z-index)=4000;
-			
+			//getStyle(aTxt_nav1[this.index],'display')='block';
+			css(aTxt_nav1[this.index],'display','block');
 			
 		}
 		aBtn_nav2[i].onmousemove=function()
@@ -43,7 +52,7 @@ window.onload=function()
 			{
 				aBtn_nav2[i].className=' ';
 			}
-			getStyle(aTxt_nav1[this.index],z-index)=1;
+			css(aTxt_nav1[this.index],'display','none');
 		}
 	}
 }
