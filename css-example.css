@@ -1,0 +1,29 @@
+figure {
+	height: 280px;
+	padding: 15px;
+	position: relative;
+	width: 320px;
+}
+figure img {
+	border-image: url('img/side.gif') 20 20 20 20 round round;
+	border-width: 15px;
+	left: 20px;
+	position: absolute;
+	transform: rotate(-2deg);
+}
+figure > a + a img {
+	left: 20px;
+	top: 30px;
+	transform: rotate(-6deg);
+}
+figure > a + a + a img {
+	left: 50px;
+	top: 50px;
+	transform: rotate(-10deg);
+}
+figure > a:hover img {
+	transform: rotate(0deg);
+	transition: all 0.1s ease-in-out; /* Bonus animation! */
+	z-index: 9999;
+}
+			
