@@ -260,19 +260,37 @@ figure > a:hover img {
 .part-2-bottom{
 	width:100%;
 	height: 48%;
-	background: url(../img/background01.jpg);
-	background-position: -140px 0px;
 	}
+img.background{
+	position: relative;
+	width: 97%;
+	height: 100%;
+	fliter:alpha(opacity=50);
+	opacity: 0.5;
+	margin-left:1.5%;
+}
+h1.title{
+	font:25px/30px "porkys_" '隶书';
+}
 .bot-left{
+	position: absolute;
+	clear: both;
+	z-index:3;
 	white-space: pre;
 	float: left;
-	font: 15px/20px '微软雅黑';
-	width: 50%;
-	color: #C7BE9B;
+	font: 18px/22px "porkys_" '微软雅黑';
+	width: 40%;
+	margin-left:10%; 
+	color: #AD7B24;
 }
 .bot-right{
-	width: 50%;
+	z-index: 3;
+	position: absolute;
+	left: 50%;
+	width: 30%;
+	margin-left: 10%;
 	white-space: pre;
 	float: right;
-	font: 15px/20px '微软雅黑';
+	font: 18px/22px "隶书";
+	color: #F7EEDF;
 }
