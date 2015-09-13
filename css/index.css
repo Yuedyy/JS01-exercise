@@ -11,7 +11,7 @@
 
 body{background:#E3E3E3;}
 
-section{background-color: #FFFFFF; width:75%; height:1600px;margin: auto;}
+section{background-color: #FFFFFF; width:75%; height:3000px;margin: auto;}
 
 /*导航样式*/
 	nav{
@@ -91,6 +91,10 @@ section{background-color: #FFFFFF; width:75%; height:1600px;margin: auto;}
 	
 
 /*大图轮播样式*/
+	.part-1{
+	width: 100%;
+	height: 700px;
+}
 	ul.big_pic{
 		top: 80px;
 		height: 580px; 
@@ -165,20 +169,26 @@ section{background-color: #FFFFFF; width:75%; height:1600px;margin: auto;}
 /* part2,左边图片*/
 .part-2 {
 	width: 100%;
-	height: 550px;
+	height: 1200px;
+}
+.part-2-top{
+width: 100%;
+height:52%;
 }
 .float-left{
 	width: 60%;
 	height: 100%;
+	float: left;
 }
 	figure {
-	margin-top: 150px;
+	margin-top: 100px;
 	padding: 15px;
 	position: relative;
 	width: 100%;
 	height: 100%;
 }
 figure img {
+	margin-left: 3%;
 	width: 70%;
 	height: 50%;
 	border-image: url('../img/side04.jpg') 30 30 30 30 round round;
@@ -201,4 +211,68 @@ figure > a:hover img {
 	transform: rotate(0deg);
 	transition: all 0.1s ease-in-out; /* Bonus animation! */
 	z-index: 9999;
+}
+
+/*part-2 float-right*/
+.float-right{
+	width: 40%;
+	height: 100%;
+	float: right;
+}
+.para{
+	margin-top: 30%;
+	margin-right: 10px;
+}
+.para h1{
+	font: 70px/100px "porkys_";
+	color: #525558;
+}
+.opara{
+	font: 20px/30px '微软雅黑';
+	color: #525558;
+}
+.enter-btn{
+	display: block;
+	width: 150px;
+	height: 60px;
+	text-decoration: none;
+	margin-top: 30px;
+	margin-left: 24%;
+	font: 40px/60px "微软雅黑";
+	color: white;
+	border-radius: 10px;
+	text-indent: 26px;
+	-moz-box-shadow:3px 3px 10px #333;
+	-Webkit-box-shadow:3px 3px 10px #333;
+	box-shadow:3px 3px 10px #333;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b4e391+0,61c419+35,61c419+70,b4e391+100,b4e391+100,b4e391+100 */
+	background: #b4e391; /* Old browsers */
+	background: -moz-linear-gradient(top,  #b4e391 0%, #61c419 35%, #61c419 70%, #b4e391 100%, #b4e391 100%, #b4e391 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b4e391), color-stop(35%,#61c419), color-stop(70%,#61c419), color-stop(100%,#b4e391), color-stop(100%,#b4e391), color-stop(100%,#b4e391)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #b4e391 0%,#61c419 35%,#61c419 70%,#b4e391 100%,#b4e391 100%,#b4e391 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #b4e391 0%,#61c419 35%,#61c419 70%,#b4e391 100%,#b4e391 100%,#b4e391 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #b4e391 0%,#61c419 35%,#61c419 70%,#b4e391 100%,#b4e391 100%,#b4e391 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #b4e391 0%,#61c419 35%,#61c419 70%,#b4e391 100%,#b4e391 100%,#b4e391 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391', endColorstr='#b4e391',GradientType=0 ); /* IE6-9 */
+
+	);
+}
+.part-2-bottom{
+	width:100%;
+	height: 48%;
+	background: url(../img/background01.jpg);
+	background-position: -140px 0px;
+	}
+.bot-left{
+	white-space: pre;
+	float: left;
+	font: 15px/20px '微软雅黑';
+	width: 50%;
+	color: #C7BE9B;
+}
+.bot-right{
+	width: 50%;
+	white-space: pre;
+	float: right;
+	font: 15px/20px '微软雅黑';
 }
