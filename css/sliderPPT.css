@@ -1,6 +1,22 @@
+
+.part-1{
+	width: 100%;
+	height: 700px;
+}
+#frame { 
+	 -webkit-transform:rotate(0deg);
+  	width:100%;
+  	height:100%; 
+   	z-index:5;
+    }
+#inner{ 
+	width:100%;
+  	height:93%;
+  	overflow:hidden;
+  	}
 ul.big_pic{
 		top: 80px;
-		height: 580px; 
+		height: 100%; 
 		width: 97%; 
 		border:10px solid transparent; 
 		overflow:hidden; 
@@ -9,7 +25,7 @@ ul.big_pic{
 	}
 	.big_pic li{
 		list-style: none; 
-		height: 600px;
+		height: 87%;
 		width: 100%; 
 		overflow: hidden; 
 		position: absolute; 
@@ -19,51 +35,263 @@ ul.big_pic{
 	}
 	.big_pic li img{
 		width: 100%; 
-		height:600px;
+		height:100%;
+	
 	}
 
+	 input
+  { position:absolute; opacity:0;} 
+ 
+  
+  #lbutton
+   { width:760px; height:20px; text-align:center;margin-top: 5px;}
+   
+  #lbutton label
+   { width:10px; height:10px; display:inline-table; border-radius:5px; background:rgb(112,114,114);}
+  
+  #lbutton label.label6
+   { display:none; }
+/* 幻灯片代码开始*/ 
+	#inner li.animation01,
+  #slider01:checked ~ #inner li.animation01,
+  #slider02:checked ~ #inner li.animation02,
+  #slider03:checked ~ #inner li.animation03,
+  #slider04:checked ~ #inner li.animation04,
+  #slider05:checked ~ #inner li.animation05
+  { -webkit-animation:img01 20s linear infinite;}
+  
+  #inner li.animation02,
+  #slider05:checked ~ #inner li.animation01,
+  #slider01:checked ~ #inner li.animation02,
+  #slider02:checked ~ #inner li.animation03,
+  #slider03:checked ~ #inner li.animation04,
+  #slider04:checked ~ #inner li.animation05
+  { -webkit-animation:img02 20s linear infinite; }
+  
+  #inner li.animation03,
+  #slider04:checked ~ #inner li.animation01,
+  #slider05:checked ~ #inner li.animation02,
+  #slider01:checked ~ #inner li.animation03,
+  #slider02:checked ~ #inner li.animation04,
+  #slider03:checked ~ #inner li.animation05
+  { -webkit-animation:img03 20s linear infinite; }
+  
+  #inner li.animation04,
+  #slider03:checked ~ #inner li.animation01,
+  #slider04:checked ~ #inner li.animation02,
+  #slider05:checked ~ #inner li.animation03,
+  #slider01:checked ~ #inner li.animation04,
+  #slider02:checked ~ #inner li.animation05
+  { -webkit-animation:img04 20s linear infinite;}
+  
+  #inner li.animation05,
+  #slider02:checked ~ #inner li.animation01,
+  #slider03:checked ~ #inner li.animation02,
+  #slider04:checked ~ #inner li.animation03,
+  #slider05:checked ~ #inner li.animation04,
+  #slider01:checked ~ #inner li.animation05
+  { -webkit-animation:img05 20s linear infinite;}
+   
+  @-webkit-keyframes img01  {
+    0% {  opacity: 0; filter: alpha(opacity=0); }
+	5% { opacity: 1; filter: alpha(opacity=100); }
+	20% {  opacity: 1; filter: alpha(opacity=100);}
+	25% {  opacity: 0; filter: alpha(opacity=0);}
+	40% {  opacity: 0; filter: alpha(opacity=0);}
+	45% {  opacity: 0; filter: alpha(opacity=0);}
+	60% { opacity: 0; filter: alpha(opacity=0); }
+  65% { opacity: 0; filter: alpha(opacity=0); }
+  80% { opacity: 0; filter: alpha(opacity=0); }
+  85% { opacity: 0; filter: alpha(opacity=0); }
+  100% { opacity: 0; filter: alpha(opacity=0); }
+	}
+   
+  @-webkit-keyframes img02 {
+   0% {  opacity: 0; filter: alpha(opacity=0); }
+  5% { opacity: 0; filter: alpha(opacity=0); }
+  20% {  opacity: 0; filter: alpha(opacity=0);}
+  25% {  opacity: 1; filter: alpha(opacity=100);}
+  40% {  opacity: 1; filter: alpha(opacity=100);}
+  45% {  opacity: 0; filter: alpha(opacity=0);}
+  60% { opacity: 0; filter: alpha(opacity=0); }
+  65% { opacity: 0; filter: alpha(opacity=0); }
+  80% { opacity: 0; filter: alpha(opacity=0); }
+  85% { opacity: 0; filter: alpha(opacity=0); }
+  100% { opacity: 0; filter: alpha(opacity=0); }
+	}
+	
+  @-webkit-keyframes img03  {
+   0% {  opacity: 0; filter: alpha(opacity=0); }
+  5% { opacity: 0; filter: alpha(opacity=0); }
+  20% {  opacity:0; filter: alpha(opacity=0);}
+  25% {  opacity: 0; filter: alpha(opacity=0);}
+  40% {  opacity: 0; filter: alpha(opacity=0);}
+  45% {  opacity:1; filter: alpha(opacity=100);}
+  60% { opacity: 1; filter: alpha(opacity=100); }
+  65% { opacity: 0; filter: alpha(opacity=0); }
+  80% { opacity: 0; filter: alpha(opacity=0); }
+  85% { opacity: 0; filter: alpha(opacity=0); }
+  100% { opacity: 0; filter: alpha(opacity=0); }
+	}
+	
+  @-webkit-keyframes img04  {
+   0% {  opacity: 0; filter: alpha(opacity=0); }
+  5% { opacity: 0; filter: alpha(opacity=0); }
+  20% {  opacity:0; filter: alpha(opacity=0);}
+  25% {  opacity: 0; filter: alpha(opacity=0);}
+  40% {  opacity: 0; filter: alpha(opacity=0);}
+  45% {  opacity: 0; filter: alpha(opacity=0);}
+  60% { opacity: 0; filter: alpha(opacity=0); }
+  65% { opacity: 1; filter: alpha(opacity=100); }
+  80% { opacity: 1; filter: alpha(opacity=100); }
+  85% { opacity: 0; filter: alpha(opacity=0); }
+  100% { opacity: 0; filter: alpha(opacity=0); }
+	}
+	
+  @-webkit-keyframes img05  {
+  0% {  opacity: 0; filter: alpha(opacity=0); }
+  5% { opacity: 0; filter: alpha(opacity=0); }
+  20% {  opacity:0; filter: alpha(opacity=0);}
+  25% {  opacity: 0; filter: alpha(opacity=0);}
+  40% {  opacity: 0; filter: alpha(opacity=0);}
+  45% {  opacity: 0; filter: alpha(opacity=0);}
+  60% { opacity: 0; filter: alpha(opacity=0); }
+  65% { opacity: 0; filter: alpha(opacity=0); }
+  80% { opacity: 0; filter: alpha(opacity=0); }
+  85% { opacity: 1; filter: alpha(opacity=100); }
+  100% { opacity: 1; filter: alpha(opacity=100); }
+	}
 
-	.mark_left{
-		width:50%;height: 100%; 
-		position:absolute; 
-		background: green; 
-		left: 0;
-		top: 0;
-		filter:alpha(opacity:0);
-		opacity:0;
-		z-index: 3000;
-	}
-	.mark_right{
-		width:50%;height: 100%; 
-		position:absolute; 
-		background: red; 
-		right: 0;
-		top: 0;
-		filter:alpha(opacity:0);
-		opacity:0;
-		z-index: 3000;
-	}
-	.big_pic .prev{
-		width:60px;
-		height:60px;
-		background: url(../img/btn.gif) no-repeat;
-		left: 20px;
-		top:48%;
-		z-index: 3001;
-		cursor: pointer;
-		position: absolute;
-		filter:alpha(opacity:0);
-		opacity:0;
-	}
-	.big_pic .next{
-		width:60px;
-		height:60px;
-		background: url(../img/btn.gif) no-repeat 0 -60px;
-		right: 20px;
-		top:48%;
-		z-index: 3001;
-		cursor: pointer;
-		position: absolute;
-		filter:alpha(opacity:0);
-		opacity:0;
-	}
+		/* 滑块代码组块开始*/
+ 
+  
+  #lbutton label.lb1,
+  #slider01:checked ~ #lbutton label:nth-child(1),
+  #slider02:checked ~ #lbutton label:nth-child(2),
+  #slider03:checked ~ #lbutton label:nth-child(3),
+  #slider04:checked ~ #lbutton label:nth-child(4),
+  #slider05:checked ~ #lbutton label:nth-child(5)
+  { -webkit-animation:label01 20s linear infinite; }
+	
+  #lbutton label.lb2,
+  #slider05:checked ~ #lbutton label:nth-child(1),
+  #slider01:checked ~ #lbutton label:nth-child(2),
+  #slider02:checked ~ #lbutton label:nth-child(3),
+  #slider03:checked ~ #lbutton label:nth-child(4),
+  #slider04:checked ~ #lbutton label:nth-child(5)
+  { -webkit-animation:label02 20s linear infinite; }
+	
+  #lbutton label.lb3,
+  #slider04:checked ~ #lbutton label:nth-child(1),
+  #slider05:checked ~ #lbutton label:nth-child(2),
+  #slider01:checked ~ #lbutton label:nth-child(3),
+  #slider02:checked ~ #lbutton label:nth-child(4),
+  #slider03:checked ~ #lbutton label:nth-child(5)
+  { -webkit-animation:label03 20s linear infinite; }
+	
+  #lbutton label.lb4,
+  #slider03:checked ~ #lbutton label:nth-child(1),
+  #slider04:checked ~ #lbutton label:nth-child(2),
+  #slider05:checked ~ #lbutton label:nth-child(3),
+  #slider01:checked ~ #lbutton label:nth-child(4),
+  #slider02:checked ~ #lbutton label:nth-child(5)
+  { -webkit-animation:label04 20s linear infinite; }
+	
+  #lbutton label.lb5,
+  #slider02:checked ~ #lbutton label:nth-child(1),
+  #slider03:checked ~ #lbutton label:nth-child(2),
+  #slider04:checked ~ #lbutton label:nth-child(3),
+  #slider05:checked ~ #lbutton label:nth-child(4),
+  #slider01:checked ~ #lbutton label:nth-child(5)
+  { -webkit-animation:label05 20s linear infinite; }
+	
+  @-webkit-keyframes label01 {
+	 0% { background:#262626; }
+	 20% { background:#262626;}
+	 21% { background:rgb(112,114,114);}
+	 100% { background:rgb(112,114,114);}
+	 }
+	 
+  @-webkit-keyframes label02 {
+	 0% { background:rgb(112,114,114);}
+	 20% { background:rgb(112,114,114);}
+	 21% { background:#262626; }
+	 40% { background:#262626; }
+	 41% { background:rgb(112,114,114);}
+	 100% { background:rgb(112,114,114;}
+	 }
+  @-webkit-keyframes label03 {
+	 0% { background:rgb(112,114,114);}
+	 40% { background:rgb(112,114,114);}
+	 41% { background:#262626; }
+	 60% { background:#262626; }
+	 61% { background:rgb(112,114,114);}
+	 100% { background:rgb(112,114,114);}
+	 }
+  @-webkit-keyframes label04 {
+	 0% { background:rgb(112,114,114);}
+	 60% { background:rgb(112,114,114);}
+	 61% { background:#262626; }
+	 80% { background:#262626; }
+	 81% { background:rgb(112,114,114);}
+	 100% { background:rgb(112,114,114);}
+	 }
+  @-webkit-keyframes label05 {
+	 0% { background:rgb(112,114,114);}
+	 80% { background:rgb(112,114,114);}
+	 81% { background:#262626; }
+	 100%{ background:#FFFFFE; }
+	 }
+	 
+	
+    /* 利用跳板使用css3选择器改变图片位置*/
+  
+  #slider01:checked ~ #inner li.animation01,
+  #slider02:checked ~ #inner li.animation02,
+  #slider03:checked ~ #inner li.animation03,
+  #slider04:checked ~ #inner li.animation04,
+  #slider05:checked ~ #inner li.animation05,
+  #slider06:checked ~ #inner li.animation01
+  { opacity:1; z-index:1; left:0px;}
+
+
+   
+ 
+ /* 重启所有动画播放*/ 
+  #slider01:active ~ #inner li,
+  #slider01:active ~ #larrow label,
+  #slider01:active ~ #rarrow label,
+  #slider01:active ~ #lbutton label,
+  #slider02:active ~ #inner li,
+  #slider02:active ~ #larrow label,
+  #slider02:active ~ #rarrow label,
+  #slider02:active ~ #lbutton label,
+  #slider03:active ~ #inner li,
+  #slider03:active ~ #larrow label,
+  #slider03:active ~ #rarrow label,
+  #slider03:active ~ #lbutton label,
+  #slider04:active ~ #inner li,
+  #slider04:active ~ #larrow label,
+  #slider04:active ~ #rarrow label,
+  #slider04:active ~ #lbutton label,
+  #slider05:active ~ #inner li,
+  #slider05:active ~ #larrow label,
+  #slider05:active ~ #rarrow label,
+  #slider05:active ~ #lbutton label
+ { -webkit-animation-name:none; } 
+ 
+  /* 设置重启时呈现的图片 */   
+  #slider01:active ~ #inner li,
+  #slider02:active ~ #inner li,
+  #slider03:active ~ #inner li,
+  #slider04:active ~ #inner li,
+  #slider05:active ~ #inner li
+  { opacity:0;}
+  #slider01:active ~ #inner li:nth-child(1),
+  #slider02:active ~ #inner li:nth-child(2),
+  #slider03:active ~ #inner li:nth-child(3),
+  #slider04:active ~ #inner li:nth-child(4),
+  #slider05:active ~ #inner li:nth-child(5)
+  { left:0px; z-index:100; opacity:1;}
+   
+ 
