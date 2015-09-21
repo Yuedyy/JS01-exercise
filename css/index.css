@@ -46,7 +46,7 @@ section{background-color: #FFFFFF; width:75%; height:3000px;margin: auto;}
 		display: inline;
 		float: left;
 	}
-	.nav-2 li{
+	.nav-2.parent{
 		margin-right: 45px;
 		width: 70px;
 		height: 80px;
@@ -54,6 +54,15 @@ section{background-color: #FFFFFF; width:75%; height:3000px;margin: auto;}
 		float: left;
 		font: 25px/80px "porkys_";
 
+	}
+	.nav-2.parent ol{
+		filter:alpha(opacity=0);
+		opacity: 0;
+		font: 20px/30px "porkys_";
+	}
+	.nav-2.parent:hover ol{
+		opacity: 1;
+		z-index: 4000;
 	}
 	.nav-1 a{
 		text-decoration: none;
